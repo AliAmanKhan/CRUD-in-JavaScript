@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form and Table Example</title>
+</head>
+
+<body>
+    <div class="the-form">
+        <h2>Form for CRUD Operations</h2>
+        <form id="dataForm">
+            <div class="row">
+            <input type="text" class="input" id="name" placeholder="Your Name" required><br>
+
+            <input type="email" class="input" id="email" placeholder="Your Email" required><br>
+            </div>
+
+            <div class="row">
+            <label>Gender:</label>
+            <input calss="input" type="radio" name="gender" value="male" required> Male
+            <input class="input" type="radio" name="gender" value="female" required> Female<br>
+            </div>
+
+            <textarea id="message" placeholder="Type Something" required></textarea><br>
+
+            <div class="row">
+            <input class="button" type="reset" value="Clear">
+            <input class="button" type="submit"
+            value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <div id="table">
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Message</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
